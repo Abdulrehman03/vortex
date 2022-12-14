@@ -10,15 +10,12 @@ body{
   color: #8fb8d1;
 }
 .descText{
-  width: 300px;
-    text-align: center;
-    margin: auto;
-    font-size: 14px;
-    position: absolute;
-    margin-top: 290px;
+
+    margin-top: 50px;
+    font-size: 17px;
 }
 .App-logo {
-  height: 80px;
+  height: 95px;
   pointer-events: none;
   margin-left: 4px;
   margin-right: 4px;
@@ -41,17 +38,18 @@ body{
 }
 
 .mainBody{
-  height: 100vh;
+  height: 80vh;
   background-color: #0a1a2a;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 20vh;
 }
 .firstPic{
-  width: 200px;
+  width: 250px;
 }
 .secondPic{
-  width: 255px;
+  width: 305px;
   position: relative;
     top: -2px;
 }
@@ -66,26 +64,10 @@ body{
 -ms-transform: scale(-1, 1);
 transform: scale(-1, 1);
 }
-
-@media screen and (max-width: 600px) {
-  .firstPic {
-   width: 100px;
-  }
-  .secondPic{
-    width: 120px;
-
-  }
-  .App-logo {
-    height: 40px;
-  }
-  ul li{
-    font-size: 10px;
-  }
-  .descText{
-    font-size: 10px;
-  }
-  
+.content{
+  width: 672px;
 }
+
 
 .words-body{
   display: flex;
@@ -100,7 +82,7 @@ ul{
   padding: 0;
   display: inline-block;
   /* transform: translateY(-50%) translateX(-50%); */
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
 
 }
@@ -129,3 +111,32 @@ ul:hover li{
 
 
 
+
+
+
+@media screen and (max-width: 600px) {
+  .firstPic {
+   width: 120px;
+  }
+  .secondPic{
+    width: 144px;
+
+  }
+  .App-logo {
+    height: 46px;
+  }
+  ul li{
+    font-size: 14px;
+  }
+  .descText{
+    font-size: 12px;
+  }
+  .content{
+    width: 327px;
+  }
+  
+  .mainBody{
+    padding-top: 10vh;
+    height: 90vh;
+  }
+}
