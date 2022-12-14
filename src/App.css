@@ -1,0 +1,131 @@
+
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("GothamLight"),
+    url("./fonts/GothamLight_0.ttf") format("woff");
+}
+
+body{
+
+  color: #8fb8d1;
+}
+.descText{
+  width: 300px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 290px;
+}
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainBody{
+  height: 100vh;
+  background-color: #0a1a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstPic{
+  width: 200px;
+}
+.secondPic{
+  width: 255px;
+  position: relative;
+    top: -2px;
+}
+.word-text{
+  font-size: 25px;
+}
+
+.word:hover{
+  -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 600px) {
+  .firstPic {
+   width: 100px;
+  }
+  .secondPic{
+    width: 120px;
+
+  }
+  .App-logo {
+    height: 40px;
+  }
+  ul li{
+    font-size: 10px;
+  }
+  .descText{
+    font-size: 10px;
+  }
+  
+}
+
+.words-body{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+
+
+ul{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  /* transform: translateY(-50%) translateX(-50%); */
+  font-size: 25px;
+  cursor: pointer;
+
+}
+ul li{
+  list-style: none;
+  float: left;
+  transition: .9s;
+    /* font-family: 'Light'; */
+
+}
+
+ul:hover li{
+  transform: rotateY(180deg);
+}
+ .descText + ul:hover{
+  display: block;
+}
+
+.footertext{
+  cursor: pointer;position: absolute;
+  bottom: 20px;
+  text-decoration: underline;
+  color: #8fb8d1;
+
+}
+
+
+
